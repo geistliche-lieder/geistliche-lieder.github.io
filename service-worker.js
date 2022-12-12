@@ -1,27 +1,27 @@
 const l = [
-  "/_app/immutable/start-61a185b8.js",
-  "/_app/immutable/components/pages/_layout.svelte-71ceabbf.js",
+  "/_app/immutable/start-0600b461.js",
+  "/_app/immutable/components/pages/_layout.svelte-59b5bf32.js",
   "/_app/immutable/assets/_layout-dd3840bb.css",
-  "/_app/immutable/components/error.svelte-44e4052f.js",
-  "/_app/immutable/components/pages/_page.svelte-6ce12f21.js",
+  "/_app/immutable/components/error.svelte-f55c1081.js",
+  "/_app/immutable/components/pages/_page.svelte-6d60c74c.js",
   "/_app/immutable/assets/_page-51bfa698.css",
-  "/_app/immutable/components/pages/song/_songId_/_page.svelte-a03df38d.js",
-  "/_app/immutable/components/pages/song/_songId_/_verseIndex_/_page.svelte-e4ae1ba3.js",
+  "/_app/immutable/components/pages/song/_songId_/_page.svelte-18be36d6.js",
+  "/_app/immutable/components/pages/song/_songId_/_verseIndex_/_page.svelte-c8c46c18.js",
   "/_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js",
   "/_app/immutable/modules/pages/song/_songId_/_page.ts-9232d639.js",
   "/_app/immutable/modules/pages/song/_songId_/_verseIndex_/_page.ts-83245c77.js",
-  "/_app/immutable/chunks/singletons-be74bc56.js",
+  "/_app/immutable/chunks/singletons-23ab2d60.js",
   "/_app/immutable/chunks/index-37370bd0.js",
   "/_app/immutable/chunks/song-8524cbf7.js",
   "/_app/immutable/chunks/_layout-1daba58d.js",
-  "/_app/immutable/chunks/stores-e9bda30b.js",
+  "/_app/immutable/chunks/stores-e1391083.js",
   "/_app/immutable/chunks/_page-1c03c40a.js",
   "/_app/immutable/chunks/_page-022daf14.js",
-  "/_app/immutable/chunks/0-e03d23ec.js",
-  "/_app/immutable/chunks/1-bf03c2f2.js",
-  "/_app/immutable/chunks/2-715f586a.js",
-  "/_app/immutable/chunks/3-34d7c153.js",
-  "/_app/immutable/chunks/4-b2eca054.js"
+  "/_app/immutable/chunks/0-15a65da8.js",
+  "/_app/immutable/chunks/1-accc1f66.js",
+  "/_app/immutable/chunks/2-b222c1c5.js",
+  "/_app/immutable/chunks/3-25f88447.js",
+  "/_app/immutable/chunks/4-ee6a3066.js"
 ], u = [
   "/.nojekyll",
   "/android-chrome-192x192.png",
@@ -42,7 +42,7 @@ const l = [
   "/safari-pinned-tab.svg",
   "/site.webmanifest",
   "/songs.json"
-], o = "1670877579605", t = self, p = `cache${o}`, i = l.concat(u), h = new Set(i);
+], o = "1670878445404", t = self, p = `cache${o}`, i = l.concat(u), h = new Set(i);
 t.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(p).then((e) => e.addAll(i)).then(() => {
