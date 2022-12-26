@@ -1,29 +1,20 @@
-const l = [
-  "/_app/immutable/start-667743e7.js",
-  "/_app/immutable/components/pages/_layout.svelte-c420e78e.js",
-  "/_app/immutable/assets/_layout-432cae01.css",
-  "/_app/immutable/components/error.svelte-9cb178e9.js",
-  "/_app/immutable/components/pages/_page.svelte-da207fb4.js",
-  "/_app/immutable/assets/_page-51bfa698.css",
-  "/_app/immutable/components/pages/song/_songId_/_page.svelte-5e7eb9bf.js",
-  "/_app/immutable/components/pages/song/_songId_/_verseIndex_/_page.svelte-1926ea46.js",
+const m = [
+  "/_app/immutable/start-f953b4a3.js",
+  "/_app/immutable/components/pages/_layout.svelte-5c29f2eb.js",
+  "/_app/immutable/assets/_layout-31533331.css",
+  "/_app/immutable/components/error.svelte-7acc0c62.js",
+  "/_app/immutable/components/pages/_page.svelte-84bceb66.js",
+  "/_app/immutable/assets/_page-f4b2c993.css",
   "/_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js",
-  "/_app/immutable/modules/pages/song/_songId_/_page.ts-9232d639.js",
-  "/_app/immutable/modules/pages/song/_songId_/_verseIndex_/_page.ts-83245c77.js",
-  "/_app/immutable/chunks/singletons-a09d80de.js",
-  "/_app/immutable/chunks/index-37370bd0.js",
-  "/_app/immutable/chunks/song-9a1cbec6.js",
+  "/_app/immutable/chunks/singletons-688b2756.js",
+  "/_app/immutable/chunks/index-d441f4ba.js",
+  "/_app/immutable/chunks/song-efbe0258.js",
   "/_app/immutable/chunks/_layout-1daba58d.js",
-  "/_app/immutable/chunks/stores-e0588eac.js",
-  "/_app/immutable/chunks/navigation-8bdf2598.js",
-  "/_app/immutable/chunks/_page-1c03c40a.js",
-  "/_app/immutable/chunks/_page-022daf14.js",
-  "/_app/immutable/chunks/0-9c22ddb5.js",
-  "/_app/immutable/chunks/1-0112f711.js",
-  "/_app/immutable/chunks/2-1fd380bc.js",
-  "/_app/immutable/chunks/3-201ba18e.js",
-  "/_app/immutable/chunks/4-f80a5126.js"
-], u = [
+  "/_app/immutable/chunks/stores-eaaa0eb7.js",
+  "/_app/immutable/chunks/0-1030f353.js",
+  "/_app/immutable/chunks/1-b61d11a4.js",
+  "/_app/immutable/chunks/2-4ce4b019.js"
+], r = [
   "/.nojekyll",
   "/android-chrome-192x192.png",
   "/android-chrome-512x512.png",
@@ -43,40 +34,40 @@ const l = [
   "/safari-pinned-tab.svg",
   "/site.webmanifest",
   "/songs.json"
-], o = "1672067279711", t = self, p = `cache${o}`, i = l.concat(u), h = new Set(i);
-t.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches.open(p).then((s) => s.addAll(i)).then(() => {
-      t.skipWaiting();
+], o = "1672067534435", a = self, i = `cache${o}`, p = m.concat(r), h = new Set(p);
+a.addEventListener("install", (s) => {
+  s.waitUntil(
+    caches.open(i).then((e) => e.addAll(p)).then(() => {
+      a.skipWaiting();
     })
   );
 });
-t.addEventListener("activate", (e) => {
-  e.waitUntil(
-    caches.keys().then(async (s) => {
-      for (const a of s)
-        a !== p && await caches.delete(a);
-      t.clients.claim();
+a.addEventListener("activate", (s) => {
+  s.waitUntil(
+    caches.keys().then(async (e) => {
+      for (const t of e)
+        t !== i && await caches.delete(t);
+      a.clients.claim();
     })
   );
 });
-async function r(e) {
-  const s = await caches.open(`offline${o}`);
+async function u(s) {
+  const e = await caches.open(`offline${o}`);
   try {
-    const a = await fetch(e);
-    return s.put(e, a.clone()), a;
-  } catch (a) {
-    const n = await s.match(e);
-    if (n)
-      return n;
-    throw a;
+    const t = await fetch(s);
+    return e.put(s, t.clone()), t;
+  } catch (t) {
+    const c = await e.match(s);
+    if (c)
+      return c;
+    throw t;
   }
 }
-t.addEventListener("fetch", (e) => {
-  if (e.request.method !== "GET" || e.request.headers.has("range"))
+a.addEventListener("fetch", (s) => {
+  if (s.request.method !== "GET" || s.request.headers.has("range"))
     return;
-  const s = new URL(e.request.url), a = s.protocol.startsWith("http"), n = s.hostname === self.location.hostname && s.port !== self.location.port, c = s.host === self.location.host && h.has(s.pathname), m = e.request.cache === "only-if-cached" && !c;
-  a && !n && !m && e.respondWith(
-    (async () => c && await caches.match(e.request) || r(e.request))()
+  const e = new URL(s.request.url), t = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && h.has(e.pathname), l = s.request.cache === "only-if-cached" && !n;
+  t && !c && !l && s.respondWith(
+    (async () => n && await caches.match(s.request) || u(s.request))()
   );
 });
