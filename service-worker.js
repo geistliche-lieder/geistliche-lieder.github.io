@@ -1,35 +1,36 @@
 const l = [
-  "/_app/immutable/start-4d5cf64f.js",
+  "/_app/immutable/start-262cd947.js",
   "/_app/immutable/components/layout.svelte-4020b759.js",
-  "/_app/immutable/components/error.svelte-4f4a8b01.js",
+  "/_app/immutable/components/error.svelte-52454e4f.js",
   "/_app/immutable/components/pages/(music)/music/_layout.svelte-19058c81.js",
   "/_app/immutable/assets/app-894920b3.css",
   "/_app/immutable/components/pages/(songtext)/_layout.svelte-fe63632a.js",
   "/_app/immutable/assets/_layout-625db5c3.css",
-  "/_app/immutable/components/pages/(music)/music/_page.svelte-cb417fa4.js",
-  "/_app/immutable/components/pages/(songtext)/_page.svelte-a8ee7753.js",
+  "/_app/immutable/components/pages/(music)/music/_page.svelte-9211b29c.js",
+  "/_app/immutable/components/pages/(songtext)/_page.svelte-bf49c469.js",
   "/_app/immutable/assets/_page-f4b2c993.css",
   "/_app/immutable/modules/pages/(music)/music/_layout.ts-35951726.js",
   "/_app/immutable/modules/pages/(songtext)/_layout.ts-9a54fe2a.js",
-  "/_app/immutable/chunks/singletons-d40baf44.js",
+  "/_app/immutable/chunks/singletons-2f9d4441.js",
   "/_app/immutable/chunks/index-9dd2fa00.js",
   "/_app/immutable/chunks/index-30ce78f4.js",
-  "/_app/immutable/chunks/stores-88e6d67d.js",
+  "/_app/immutable/chunks/stores-f182b5e4.js",
   "/_app/immutable/chunks/_layout-002d5f8b.js",
   "/_app/immutable/chunks/song-db7d99c5.js",
   "/_app/immutable/chunks/store-b2dce52a.js",
   "/_app/immutable/chunks/_layout-b3041e4f.js",
   "/_app/immutable/chunks/TitleBar-bab06775.js",
   "/_app/immutable/chunks/0-21feb7b6.js",
-  "/_app/immutable/chunks/1-f23e8948.js",
+  "/_app/immutable/chunks/1-ab4926f9.js",
   "/_app/immutable/chunks/2-83cb580e.js",
   "/_app/immutable/chunks/3-c823a476.js",
-  "/_app/immutable/chunks/4-bf8793d2.js",
-  "/_app/immutable/chunks/5-e33d5aa1.js"
+  "/_app/immutable/chunks/4-97bb4a5c.js",
+  "/_app/immutable/chunks/5-7ab60f8b.js"
 ], u = [
   "/.nojekyll",
   "/android-chrome-192x192.png",
   "/android-chrome-512x512.png",
+  "/apple-touch-icon-precomposed.png",
   "/apple-touch-icon.png",
   "/browserconfig.xml",
   "/favicon-16x16.png",
@@ -46,7 +47,7 @@ const l = [
   "/safari-pinned-tab.svg",
   "/site.webmanifest",
   "/songs.json"
-], p = "1672346568611", a = self, o = `cache${p}`, i = l.concat(u), h = new Set(i);
+], p = "1672357729333", a = self, o = `cache${p}`, i = l.concat(u), h = new Set(i);
 a.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(i)).then(() => {
@@ -63,7 +64,7 @@ a.addEventListener("activate", (s) => {
     })
   );
 });
-async function r(s) {
+async function b(s) {
   const e = await caches.open(`offline${p}`);
   try {
     const t = await fetch(s);
@@ -80,6 +81,6 @@ a.addEventListener("fetch", (s) => {
     return;
   const e = new URL(s.request.url), t = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && h.has(e.pathname), m = s.request.cache === "only-if-cached" && !n;
   t && !c && !m && s.respondWith(
-    (async () => n && await caches.match(s.request) || r(s.request))()
+    (async () => n && await caches.match(s.request) || b(s.request))()
   );
 });
