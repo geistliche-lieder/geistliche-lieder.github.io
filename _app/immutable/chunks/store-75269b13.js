@@ -1,1 +1,0 @@
-import{w as s}from"./index-03f8d9f7.js";const o="Alle Lieder",n="Favoriten",e=[{T:"Jugendmappen",F:"Jugendmappe "},{T:"Weitere",F:"Weitere "}],t=s([{T:o,S:[]},{T:n,S:[]}]),c=s({}),l=s(null),i=s(),r=s(),u=s(""),O=s([]),S=s({src:null,song:null,isLoading:!1}),g=s(),p=s(!1);export{o as A,n as F,l as a,t as b,S as c,O as d,p as e,u as f,r as g,e as h,g as i,c as s,i as u};
