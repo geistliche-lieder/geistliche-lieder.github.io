@@ -1,11 +1,11 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-b7d96102.js",
+    "file": "_app/immutable/start-9eac4940.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-c9ad3d2c.js",
-      "_singletons-438b3168.js"
+      "_singletons-f9049f30.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -25,12 +25,12 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-c18dcd64.js",
+    "file": "_app/immutable/components/error.svelte-f4eee425.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-c9ad3d2c.js",
-      "_stores-52904201.js"
+      "_stores-e903f64e.js"
     ]
   },
   "src/routes/(music)/music/+layout.svelte": {
@@ -41,7 +41,7 @@
       "_index-c9ad3d2c.js"
     ],
     "css": [
-      "_app/immutable/assets/app-2d79883c.css"
+      "_app/immutable/assets/app-5ace6a37.css"
     ]
   },
   "src/routes/(songtext)/+layout.svelte": {
@@ -54,31 +54,31 @@
     ],
     "css": [
       "_app/immutable/assets/_layout-625db5c3.css",
-      "_app/immutable/assets/app-2d79883c.css"
+      "_app/immutable/assets/app-5ace6a37.css"
     ]
   },
   "src/routes/(music)/music/+page.svelte": {
-    "file": "_app/immutable/components/pages/(music)/music/_page.svelte-23568225.js",
+    "file": "_app/immutable/components/pages/(music)/music/_page.svelte-21a278fc.js",
     "src": "src/routes/(music)/music/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c9ad3d2c.js",
-      "_stores-52904201.js",
+      "_stores-e903f64e.js",
       "_TitleBar-17d224f1.js",
       "_store-17e28e4d.js"
     ]
   },
   "src/routes/(songtext)/+page.svelte": {
-    "file": "_app/immutable/components/pages/(songtext)/_page.svelte-fa6cee8c.js",
+    "file": "_app/immutable/components/pages/(songtext)/_page.svelte-8557f6ea.js",
     "src": "src/routes/(songtext)/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c9ad3d2c.js",
-      "_stores-52904201.js",
+      "_stores-e903f64e.js",
       "_song-e8744695.js",
       "_TitleBar-17d224f1.js",
       "_store-17e28e4d.js",
-      "_singletons-438b3168.js"
+      "_singletons-f9049f30.js"
     ],
     "css": [
       "_app/immutable/assets/_page-f4b2c993.css"
@@ -100,8 +100,8 @@
       "__layout-b3041e4f.js"
     ]
   },
-  "_singletons-438b3168.js": {
-    "file": "_app/immutable/chunks/singletons-438b3168.js",
+  "_singletons-f9049f30.js": {
+    "file": "_app/immutable/chunks/singletons-f9049f30.js",
     "imports": [
       "_index-983c2565.js"
     ]
@@ -115,11 +115,11 @@
       "_index-c9ad3d2c.js"
     ]
   },
-  "_stores-52904201.js": {
-    "file": "_app/immutable/chunks/stores-52904201.js",
+  "_stores-e903f64e.js": {
+    "file": "_app/immutable/chunks/stores-e903f64e.js",
     "imports": [
       "_index-c9ad3d2c.js",
-      "_singletons-438b3168.js"
+      "_singletons-f9049f30.js"
     ]
   },
   "__layout-002d5f8b.js": {
@@ -155,7 +155,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-34dae9b1.js",
+    "file": "_app/immutable/chunks/1-45b8fd32.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -181,7 +181,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-e8660829.js",
+    "file": "_app/immutable/chunks/4-1dff1152.js",
     "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
@@ -189,7 +189,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-05f051b3.js",
+    "file": "_app/immutable/chunks/5-f321863a.js",
     "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
@@ -205,7 +205,7 @@
     "src": "src/routes/(songtext)/+page.css"
   },
   "app.css": {
-    "file": "_app/immutable/assets/app-2d79883c.css",
+    "file": "_app/immutable/assets/app-5ace6a37.css",
     "src": "app.css"
   }
 }
