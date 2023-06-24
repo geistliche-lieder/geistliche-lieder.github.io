@@ -1,11 +1,11 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-ba33db15.js",
+    "file": "_app/immutable/start-117bff74.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-c9ad3d2c.js",
-      "_singletons-fd5e01d4.js"
+      "_singletons-a27dcfd0.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -25,12 +25,12 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-3644edd5.js",
+    "file": "_app/immutable/components/error.svelte-c0d48ba8.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-c9ad3d2c.js",
-      "_stores-52a3e50d.js"
+      "_stores-e5d40060.js"
     ]
   },
   "src/routes/(music)/music/+layout.svelte": {
@@ -58,27 +58,27 @@
     ]
   },
   "src/routes/(music)/music/+page.svelte": {
-    "file": "_app/immutable/components/pages/(music)/music/_page.svelte-7b4e99b0.js",
+    "file": "_app/immutable/components/pages/(music)/music/_page.svelte-b224886d.js",
     "src": "src/routes/(music)/music/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c9ad3d2c.js",
-      "_stores-52a3e50d.js",
+      "_stores-e5d40060.js",
       "_TitleBar-17d224f1.js",
       "_store-9ea2ec21.js"
     ]
   },
   "src/routes/(songtext)/+page.svelte": {
-    "file": "_app/immutable/components/pages/(songtext)/_page.svelte-e3fc393a.js",
+    "file": "_app/immutable/components/pages/(songtext)/_page.svelte-5f97c824.js",
     "src": "src/routes/(songtext)/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c9ad3d2c.js",
-      "_stores-52a3e50d.js",
+      "_stores-e5d40060.js",
       "_song-f5fb165b.js",
       "_TitleBar-17d224f1.js",
       "_store-9ea2ec21.js",
-      "_singletons-fd5e01d4.js"
+      "_singletons-a27dcfd0.js"
     ],
     "css": [
       "_app/immutable/assets/_page-f4b2c993.css"
@@ -100,8 +100,8 @@
       "__layout-b3041e4f.js"
     ]
   },
-  "_singletons-fd5e01d4.js": {
-    "file": "_app/immutable/chunks/singletons-fd5e01d4.js",
+  "_singletons-a27dcfd0.js": {
+    "file": "_app/immutable/chunks/singletons-a27dcfd0.js",
     "imports": [
       "_index-983c2565.js"
     ]
@@ -115,11 +115,11 @@
       "_index-c9ad3d2c.js"
     ]
   },
-  "_stores-52a3e50d.js": {
-    "file": "_app/immutable/chunks/stores-52a3e50d.js",
+  "_stores-e5d40060.js": {
+    "file": "_app/immutable/chunks/stores-e5d40060.js",
     "imports": [
       "_index-c9ad3d2c.js",
-      "_singletons-fd5e01d4.js"
+      "_singletons-a27dcfd0.js"
     ]
   },
   "__layout-002d5f8b.js": {
@@ -155,7 +155,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-1ecea8d8.js",
+    "file": "_app/immutable/chunks/1-47f8b695.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -181,7 +181,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-2f12182c.js",
+    "file": "_app/immutable/chunks/4-2b2ba04d.js",
     "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
@@ -189,23 +189,23 @@
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-05d095a0.js",
+    "file": "_app/immutable/chunks/5-52f6370d.js",
     "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/(songtext)/+page.svelte"
     ]
   },
-  "src/routes/(songtext)/+layout.css": {
-    "file": "_app/immutable/assets/_layout-625db5c3.css",
-    "src": "src/routes/(songtext)/+layout.css"
+  "src/routes/(songtext)/+page.css": {
+    "file": "_app/immutable/assets/_page-f4b2c993.css",
+    "src": "src/routes/(songtext)/+page.css"
   },
   "app.css": {
     "file": "_app/immutable/assets/app-5ace6a37.css",
     "src": "app.css"
   },
-  "src/routes/(songtext)/+page.css": {
-    "file": "_app/immutable/assets/_page-f4b2c993.css",
-    "src": "src/routes/(songtext)/+page.css"
+  "src/routes/(songtext)/+layout.css": {
+    "file": "_app/immutable/assets/_layout-625db5c3.css",
+    "src": "src/routes/(songtext)/+layout.css"
   }
 }
