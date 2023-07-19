@@ -1,86 +1,78 @@
-const l = [
-  "/_app/immutable/start-117bff74.js",
-  "/_app/immutable/components/layout.svelte-01de2d7b.js",
-  "/_app/immutable/components/error.svelte-c0d48ba8.js",
-  "/_app/immutable/components/pages/(music)/music/_layout.svelte-a1f5d0b0.js",
-  "/_app/immutable/assets/app-5ace6a37.css",
-  "/_app/immutable/components/pages/(songtext)/_layout.svelte-1a2e8a67.js",
-  "/_app/immutable/assets/_layout-625db5c3.css",
-  "/_app/immutable/components/pages/(music)/music/_page.svelte-b224886d.js",
-  "/_app/immutable/components/pages/(songtext)/_page.svelte-5f97c824.js",
-  "/_app/immutable/assets/_page-f4b2c993.css",
-  "/_app/immutable/modules/pages/(music)/music/_layout.ts-35951726.js",
-  "/_app/immutable/modules/pages/(songtext)/_layout.ts-9a54fe2a.js",
-  "/_app/immutable/chunks/singletons-a27dcfd0.js",
-  "/_app/immutable/chunks/index-c9ad3d2c.js",
-  "/_app/immutable/chunks/index-983c2565.js",
-  "/_app/immutable/chunks/stores-e5d40060.js",
-  "/_app/immutable/chunks/_layout-002d5f8b.js",
-  "/_app/immutable/chunks/song-f5fb165b.js",
-  "/_app/immutable/chunks/store-9ea2ec21.js",
-  "/_app/immutable/chunks/_layout-b3041e4f.js",
-  "/_app/immutable/chunks/TitleBar-17d224f1.js",
-  "/_app/immutable/chunks/0-4a2bc401.js",
-  "/_app/immutable/chunks/1-47f8b695.js",
-  "/_app/immutable/chunks/2-5d6f8d14.js",
-  "/_app/immutable/chunks/3-b2d853a0.js",
-  "/_app/immutable/chunks/4-2b2ba04d.js",
-  "/_app/immutable/chunks/5-52f6370d.js"
-], u = [
-  "/.nojekyll",
-  "/android-chrome-192x192.png",
-  "/android-chrome-512x512.png",
-  "/apple-touch-icon-precomposed.png",
-  "/apple-touch-icon.png",
-  "/browserconfig.xml",
-  "/favicon-16x16.png",
-  "/favicon-32x32.png",
-  "/favicon.ico",
-  "/favicon.png",
-  "/index.css",
-  "/mstile-144x144.png",
-  "/mstile-150x150.png",
-  "/mstile-310x150.png",
-  "/mstile-310x310.png",
-  "/mstile-70x70.png",
-  "/robots.txt",
-  "/safari-pinned-tab.svg",
-  "/site.webmanifest",
-  "/songs.json"
-], p = "1687629476905", a = self, o = `cache${p}`, i = l.concat(u), h = new Set(i);
-a.addEventListener("install", (s) => {
-  s.waitUntil(
-    caches.open(o).then((e) => e.addAll(i)).then(() => {
-      a.skipWaiting();
+const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r = [
+  s + "/_app/immutable/entry/app.3dfa001c.js",
+  s + "/_app/immutable/nodes/0.d520ca0d.js",
+  s + "/_app/immutable/nodes/1.3205ce4c.js",
+  s + "/_app/immutable/nodes/2.210807a6.js",
+  s + "/_app/immutable/assets/app.d5b86921.css",
+  s + "/_app/immutable/assets/3.625db5c3.css",
+  s + "/_app/immutable/nodes/3.88685b55.js",
+  s + "/_app/immutable/nodes/4.f1ac47b5.js",
+  s + "/_app/immutable/assets/5.f4b2c993.css",
+  s + "/_app/immutable/nodes/5.bc2237e0.js",
+  s + "/_app/immutable/chunks/TitleBar.5064f7e6.js",
+  s + "/_app/immutable/chunks/index.4e284ba1.js",
+  s + "/_app/immutable/chunks/index.eab26d42.js",
+  s + "/_app/immutable/chunks/scheduler.c7c6d1ea.js",
+  s + "/_app/immutable/chunks/singletons.da4867a8.js",
+  s + "/_app/immutable/chunks/song.114e1fbd.js",
+  s + "/_app/immutable/chunks/store.d78c978e.js",
+  s + "/_app/immutable/chunks/stores.b091a535.js",
+  s + "/_app/immutable/entry/start.b0b5b099.js"
+], h = [
+  s + "/.nojekyll",
+  s + "/android-chrome-192x192.png",
+  s + "/android-chrome-512x512.png",
+  s + "/apple-touch-icon-precomposed.png",
+  s + "/apple-touch-icon.png",
+  s + "/browserconfig.xml",
+  s + "/favicon-16x16.png",
+  s + "/favicon-32x32.png",
+  s + "/favicon.ico",
+  s + "/favicon.png",
+  s + "/index.css",
+  s + "/mstile-144x144.png",
+  s + "/mstile-150x150.png",
+  s + "/mstile-310x150.png",
+  s + "/mstile-310x310.png",
+  s + "/mstile-70x70.png",
+  s + "/robots.txt",
+  s + "/safari-pinned-tab.svg",
+  s + "/site.webmanifest",
+  s + "/songs.json"
+], o = "1689784262325", c = self, p = `cache${o}`, l = r.concat(h), u = new Set(l);
+c.addEventListener("install", (e) => {
+  e.waitUntil(
+    caches.open(p).then((t) => t.addAll(l)).then(() => {
+      c.skipWaiting();
     })
   );
 });
-a.addEventListener("activate", (s) => {
-  s.waitUntil(
-    caches.keys().then(async (e) => {
-      for (const t of e)
-        t !== o && await caches.delete(t);
-      a.clients.claim();
+c.addEventListener("activate", (e) => {
+  e.waitUntil(
+    caches.keys().then(async (t) => {
+      for (const a of t)
+        a !== p && await caches.delete(a);
+      c.clients.claim();
     })
   );
 });
-async function r(s) {
-  const e = await caches.open(`offline${p}`);
+async function d(e) {
+  const t = await caches.open(`offline${o}`);
   try {
-    const t = await fetch(s);
-    return e.put(s, t.clone()), t;
-  } catch (t) {
-    const c = await e.match(s);
-    if (c)
-      return c;
-    throw t;
+    const a = await fetch(e);
+    return t.put(e, a.clone()), a;
+  } catch (a) {
+    const n = await t.match(e);
+    if (n)
+      return n;
+    throw a;
   }
 }
-a.addEventListener("fetch", (s) => {
-  if (s.request.method !== "GET" || s.request.headers.has("range"))
+c.addEventListener("fetch", (e) => {
+  if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const e = new URL(s.request.url), t = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && h.has(e.pathname), m = s.request.cache === "only-if-cached" && !n;
-  t && !c && !m && s.respondWith(
-    (async () => n && await caches.match(s.request) || r(s.request))()
+  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), n = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), m = e.request.cache === "only-if-cached" && !i;
+  a && !n && !m && e.respondWith(
+    (async () => i && await caches.match(e.request) || d(e.request))()
   );
 });

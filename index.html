@@ -18,63 +18,61 @@
 	<title>Geistliche Lieder</title>
 	<meta name="description" content="Geistliche Lieder für alle." />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout-625db5c3.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/app-5ace6a37.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page-f4b2c993.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/start-117bff74.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-c9ad3d2c.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-a27dcfd0.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-983c2565.js">
-		<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-01de2d7b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/(songtext)/_layout.svelte-1a2e8a67.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/song-f5fb165b.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/store-9ea2ec21.js">
-		<link rel="modulepreload" href="./_app/immutable/modules/pages/(songtext)/_layout.ts-9a54fe2a.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-b3041e4f.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/(songtext)/_page.svelte-5f97c824.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores-e5d40060.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/TitleBar-17d224f1.js">
-		<script>
-			if ('serviceWorker' in navigator) {
-				addEventListener('load', function () {
-					navigator.serviceWorker.register('./service-worker.js');
-				});
-			}
-		</script>
+	
+		<link href="./_app/immutable/assets/3.625db5c3.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/app.d5b86921.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/5.f4b2c993.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.b0b5b099.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.c7c6d1ea.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.da4867a8.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.4e284ba1.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.3dfa001c.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.eab26d42.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.d520ca0d.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.88685b55.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/song.114e1fbd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/store.d78c978e.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/5.bc2237e0.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.b091a535.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/TitleBar.5064f7e6.js">
 </head>
 
 <body>
-	
-
-
-<main class="overflow-hidden flex justify-center items-center svelte-xrb8xn">
+	  <main class="overflow-hidden flex justify-center items-center svelte-xrb8xn">
     Lade Lieder...
-    <progress class="progress w-56"></progress>
-  
-</main>
+    <progress class="progress w-56"></progress>  </main> 
+			
+			<script>
+				{
+					__sveltekit_14fi262 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
+					const element = document.currentScript.parentElement;
 
-		<script type="module" data-sveltekit-hydrate="il2tag">
-			import { start } from "./_app/immutable/start-117bff74.js";
+					const data = [null,null,null];
 
-			start({
-				env: {},
-				hydrate: {
-					status: 200,
-					error: null,
-					node_ids: [0, 3, 5],
-					params: {},
-					routeId: "(songtext)",
-					data: (function(a){return [a,a,a]}(null)),
-					form: null
-				},
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="il2tag"]').parentNode,
-				trailing_slash: "never"
-			});
-		</script>
-	
+					Promise.all([
+						import("./_app/immutable/entry/start.b0b5b099.js"),
+						import("./_app/immutable/entry/app.3dfa001c.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('./service-worker.js');
+						});
+					}
+				}
+			</script>
+		
 </body>
 
 </html>
