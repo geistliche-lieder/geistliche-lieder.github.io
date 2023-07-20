@@ -1,23 +1,23 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r = [
-  s + "/_app/immutable/entry/app.b43f1ada.js",
+  s + "/_app/immutable/entry/app.59874e8b.js",
   s + "/_app/immutable/nodes/0.d520ca0d.js",
-  s + "/_app/immutable/nodes/1.abc345d3.js",
+  s + "/_app/immutable/nodes/1.cb563f83.js",
   s + "/_app/immutable/nodes/2.10106310.js",
   s + "/_app/immutable/assets/app.3e1744fb.css",
   s + "/_app/immutable/assets/3.625db5c3.css",
   s + "/_app/immutable/nodes/3.c31588b6.js",
-  s + "/_app/immutable/nodes/4.73b0211a.js",
+  s + "/_app/immutable/nodes/4.b70868ae.js",
   s + "/_app/immutable/assets/5.f4b2c993.css",
-  s + "/_app/immutable/nodes/5.622eff65.js",
-  s + "/_app/immutable/chunks/TitleBar.5064f7e6.js",
+  s + "/_app/immutable/nodes/5.89e7284a.js",
+  s + "/_app/immutable/chunks/TitleBar.f5b25ff0.js",
   s + "/_app/immutable/chunks/index.4e284ba1.js",
   s + "/_app/immutable/chunks/index.eab26d42.js",
   s + "/_app/immutable/chunks/scheduler.c7c6d1ea.js",
-  s + "/_app/immutable/chunks/singletons.4bbf3024.js",
+  s + "/_app/immutable/chunks/singletons.75c3f268.js",
   s + "/_app/immutable/chunks/song.114e1fbd.js",
   s + "/_app/immutable/chunks/store.d78c978e.js",
-  s + "/_app/immutable/chunks/stores.e72cd1b6.js",
-  s + "/_app/immutable/entry/start.b801b138.js"
+  s + "/_app/immutable/chunks/stores.d5ff2d09.js",
+  s + "/_app/immutable/entry/start.2254dbaa.js"
 ], h = [
   s + "/.nojekyll",
   s + "/android-chrome-192x192.png",
@@ -39,7 +39,7 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r
   s + "/safari-pinned-tab.svg",
   s + "/site.webmanifest",
   s + "/songs.json"
-], o = "1689887150368", n = self, p = `cache${o}`, l = r.concat(h), u = new Set(l);
+], o = "1689889199333", n = self, p = `cache${o}`, l = r.concat(h), u = new Set(l);
 n.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((t) => t.addAll(l)).then(() => {
