@@ -1,25 +1,28 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h = [
-  s + "/_app/immutable/entry/app.801fd81b.js",
-  s + "/_app/immutable/nodes/0.fee4e05e.js",
-  s + "/_app/immutable/nodes/1.81ebd059.js",
-  s + "/_app/immutable/nodes/2.b3f3645e.js",
-  s + "/_app/immutable/assets/app.105a26b3.css",
-  s + "/_app/immutable/assets/3.625db5c3.css",
-  s + "/_app/immutable/nodes/3.929baf91.js",
-  s + "/_app/immutable/nodes/4.1bb0e68b.js",
-  s + "/_app/immutable/nodes/5.c84a1cb1.js",
+  s + "/_app/immutable/entry/app.11caf760.js",
+  s + "/_app/immutable/nodes/0.573671fd.js",
+  s + "/_app/immutable/nodes/1.43b91ffe.js",
+  s + "/_app/immutable/assets/2.625db5c3.css",
+  s + "/_app/immutable/nodes/2.05324fde.js",
+  s + "/_app/immutable/nodes/3.9a1284d9.js",
+  s + "/_app/immutable/nodes/4.89d562f8.js",
+  s + "/_app/immutable/nodes/5.8ce4060b.js",
   s + "/_app/immutable/assets/SettingsPage.f4b2c993.css",
-  s + "/_app/immutable/chunks/SettingsPage.e75755b0.js",
-  s + "/_app/immutable/chunks/index.02dae1cf.js",
-  s + "/_app/immutable/chunks/index.a4871ec6.js",
-  s + "/_app/immutable/chunks/navigation.ff86b801.js",
-  s + "/_app/immutable/chunks/scheduler.b756a13f.js",
-  s + "/_app/immutable/chunks/singletons.c2302af3.js",
-  s + "/_app/immutable/chunks/song.fca63610.js",
-  s + "/_app/immutable/chunks/store.35f58f5c.js",
-  s + "/_app/immutable/chunks/stores.fdee632d.js",
-  s + "/_app/immutable/entry/start.1b709a83.js"
-], r = [
+  s + "/_app/immutable/chunks/SettingsPage.421513c5.js",
+  s + "/_app/immutable/chunks/app.c71ceb35.js",
+  s + "/_app/immutable/assets/app.105a26b3.css",
+  s + "/_app/immutable/chunks/common.1905f694.js",
+  s + "/_app/immutable/chunks/index.a4cc0304.js",
+  s + "/_app/immutable/chunks/index.c2058180.js",
+  s + "/_app/immutable/chunks/music.3b4e92c2.js",
+  s + "/_app/immutable/chunks/navigation.c1d7cb42.js",
+  s + "/_app/immutable/chunks/scheduler.a6ab6dcc.js",
+  s + "/_app/immutable/chunks/singletons.da8501f2.js",
+  s + "/_app/immutable/chunks/song.bdf5117e.js",
+  s + "/_app/immutable/chunks/store.c404d4b6.js",
+  s + "/_app/immutable/chunks/stores.6dae2f6a.js",
+  s + "/_app/immutable/entry/start.f2f797a4.js"
+], u = [
   s + "/.nojekyll",
   s + "/android-chrome-192x192.png",
   s + "/android-chrome-512x512.png",
@@ -40,40 +43,40 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h
   s + "/safari-pinned-tab.svg",
   s + "/site.webmanifest",
   s + "/songs.json"
-], o = "1697660606509", n = self, p = `cache${o}`, l = h.concat(r), u = new Set(l);
-n.addEventListener("install", (e) => {
+], o = "1697661941958", c = self, p = `cache${o}`, m = h.concat(u), r = new Set(m);
+c.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(p).then((t) => t.addAll(l)).then(() => {
-      n.skipWaiting();
+    caches.open(p).then((a) => a.addAll(m)).then(() => {
+      c.skipWaiting();
     })
   );
 });
-n.addEventListener("activate", (e) => {
+c.addEventListener("activate", (e) => {
   e.waitUntil(
-    caches.keys().then(async (t) => {
-      for (const a of t)
-        a !== p && await caches.delete(a);
-      n.clients.claim();
+    caches.keys().then(async (a) => {
+      for (const t of a)
+        t !== p && await caches.delete(t);
+      c.clients.claim();
     })
   );
 });
-async function b(e) {
-  const t = await caches.open(`offline${o}`);
+async function d(e) {
+  const a = await caches.open(`offline${o}`);
   try {
-    const a = await fetch(e);
-    return t.put(e, a.clone()), a;
-  } catch (a) {
-    const c = await t.match(e);
-    if (c)
-      return c;
-    throw a;
+    const t = await fetch(e);
+    return a.put(e, t.clone()), t;
+  } catch (t) {
+    const n = await a.match(e);
+    if (n)
+      return n;
+    throw t;
   }
 }
-n.addEventListener("fetch", (e) => {
+c.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), c = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), m = e.request.cache === "only-if-cached" && !i;
-  a && !c && !m && e.respondWith(
-    (async () => i && await caches.match(e.request) || b(e.request))()
+  const a = new URL(e.request.url), t = a.protocol.startsWith("http"), n = a.hostname === self.location.hostname && a.port !== self.location.port, i = a.host === self.location.host && r.has(a.pathname), l = e.request.cache === "only-if-cached" && !i;
+  t && !n && !l && e.respondWith(
+    (async () => i && await caches.match(e.request) || d(e.request))()
   );
 });
