@@ -1,24 +1,24 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r = [
-  s + "/_app/immutable/entry/app.8b0f5648.js",
-  s + "/_app/immutable/nodes/0.37165181.js",
-  s + "/_app/immutable/nodes/1.6d77e5f2.js",
-  s + "/_app/immutable/nodes/2.7cf0a172.js",
+  s + "/_app/immutable/entry/app.99774c38.js",
+  s + "/_app/immutable/nodes/0.db0fc251.js",
+  s + "/_app/immutable/nodes/1.8021694e.js",
+  s + "/_app/immutable/nodes/2.3b760cec.js",
   s + "/_app/immutable/assets/app.19e9f3c1.css",
   s + "/_app/immutable/assets/3.625db5c3.css",
-  s + "/_app/immutable/nodes/3.7e0eacf8.js",
-  s + "/_app/immutable/nodes/4.ed3587db.js",
+  s + "/_app/immutable/nodes/3.045880fb.js",
+  s + "/_app/immutable/nodes/4.3e6eeea5.js",
   s + "/_app/immutable/assets/5.f4b2c993.css",
-  s + "/_app/immutable/nodes/5.8e42a20c.js",
-  s + "/_app/immutable/chunks/TitleBar.f5b25ff0.js",
-  s + "/_app/immutable/chunks/index.4e284ba1.js",
-  s + "/_app/immutable/chunks/index.eab26d42.js",
-  s + "/_app/immutable/chunks/navigation.7c52a382.js",
-  s + "/_app/immutable/chunks/scheduler.c7c6d1ea.js",
-  s + "/_app/immutable/chunks/singletons.adaf2cbc.js",
-  s + "/_app/immutable/chunks/song.b6a753f6.js",
-  s + "/_app/immutable/chunks/store.d78c978e.js",
-  s + "/_app/immutable/chunks/stores.d44f8c97.js",
-  s + "/_app/immutable/entry/start.729be6a1.js"
+  s + "/_app/immutable/nodes/5.ee6ac363.js",
+  s + "/_app/immutable/chunks/TitleBar.242c0022.js",
+  s + "/_app/immutable/chunks/index.0500b2c7.js",
+  s + "/_app/immutable/chunks/index.81fd0eb1.js",
+  s + "/_app/immutable/chunks/navigation.21a6321d.js",
+  s + "/_app/immutable/chunks/scheduler.12b6bea3.js",
+  s + "/_app/immutable/chunks/singletons.1c339f29.js",
+  s + "/_app/immutable/chunks/song.fbf5cc25.js",
+  s + "/_app/immutable/chunks/store.4c11173f.js",
+  s + "/_app/immutable/chunks/stores.e8cb1ec3.js",
+  s + "/_app/immutable/entry/start.36301fa5.js"
 ], h = [
   s + "/.nojekyll",
   s + "/android-chrome-192x192.png",
@@ -40,7 +40,7 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r
   s + "/safari-pinned-tab.svg",
   s + "/site.webmanifest",
   s + "/songs.json"
-], o = "1690317101784", c = self, p = `cache${o}`, l = r.concat(h), u = new Set(l);
+], o = "1697638543471", c = self, p = `cache${o}`, l = r.concat(h), u = new Set(l);
 c.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((t) => t.addAll(l)).then(() => {
