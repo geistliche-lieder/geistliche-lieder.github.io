@@ -1,24 +1,24 @@
-const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), d = [
-  s + "/_app/immutable/entry/app.97858381.js",
-  s + "/_app/immutable/nodes/0.d9f53ce7.js",
-  s + "/_app/immutable/nodes/1.3ed647d8.js",
-  s + "/_app/immutable/nodes/2.0ed1e360.js",
-  s + "/_app/immutable/assets/app.bc442170.css",
+const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h = [
+  s + "/_app/immutable/entry/app.801fd81b.js",
+  s + "/_app/immutable/nodes/0.fee4e05e.js",
+  s + "/_app/immutable/nodes/1.81ebd059.js",
+  s + "/_app/immutable/nodes/2.b3f3645e.js",
+  s + "/_app/immutable/assets/app.105a26b3.css",
   s + "/_app/immutable/assets/3.625db5c3.css",
-  s + "/_app/immutable/nodes/3.7e8952c7.js",
-  s + "/_app/immutable/nodes/4.9e4164d0.js",
-  s + "/_app/immutable/nodes/5.5da11d9c.js",
-  s + "/_app/immutable/assets/VirtualList.f4b2c993.css",
-  s + "/_app/immutable/chunks/VirtualList.5950c98c.js",
-  s + "/_app/immutable/chunks/index.0e2c8bd1.js",
-  s + "/_app/immutable/chunks/index.5684e23d.js",
-  s + "/_app/immutable/chunks/navigation.6ba2aea1.js",
-  s + "/_app/immutable/chunks/scheduler.cd932b42.js",
-  s + "/_app/immutable/chunks/singletons.f0d53683.js",
-  s + "/_app/immutable/chunks/song.a00df9d6.js",
-  s + "/_app/immutable/chunks/store.3ba0d815.js",
-  s + "/_app/immutable/chunks/stores.de81d5b0.js",
-  s + "/_app/immutable/entry/start.bad4bd21.js"
+  s + "/_app/immutable/nodes/3.929baf91.js",
+  s + "/_app/immutable/nodes/4.1bb0e68b.js",
+  s + "/_app/immutable/nodes/5.c84a1cb1.js",
+  s + "/_app/immutable/assets/SettingsPage.f4b2c993.css",
+  s + "/_app/immutable/chunks/SettingsPage.e75755b0.js",
+  s + "/_app/immutable/chunks/index.02dae1cf.js",
+  s + "/_app/immutable/chunks/index.a4871ec6.js",
+  s + "/_app/immutable/chunks/navigation.ff86b801.js",
+  s + "/_app/immutable/chunks/scheduler.b756a13f.js",
+  s + "/_app/immutable/chunks/singletons.c2302af3.js",
+  s + "/_app/immutable/chunks/song.fca63610.js",
+  s + "/_app/immutable/chunks/store.35f58f5c.js",
+  s + "/_app/immutable/chunks/stores.fdee632d.js",
+  s + "/_app/immutable/entry/start.1b709a83.js"
 ], r = [
   s + "/.nojekyll",
   s + "/android-chrome-192x192.png",
@@ -40,7 +40,7 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), d
   s + "/safari-pinned-tab.svg",
   s + "/site.webmanifest",
   s + "/songs.json"
-], o = "1697644029849", n = self, p = `cache${o}`, l = d.concat(r), h = new Set(l);
+], o = "1697660606509", n = self, p = `cache${o}`, l = h.concat(r), u = new Set(l);
 n.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((t) => t.addAll(l)).then(() => {
@@ -57,7 +57,7 @@ n.addEventListener("activate", (e) => {
     })
   );
 });
-async function u(e) {
+async function b(e) {
   const t = await caches.open(`offline${o}`);
   try {
     const a = await fetch(e);
@@ -72,8 +72,8 @@ async function u(e) {
 n.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), c = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && h.has(t.pathname), m = e.request.cache === "only-if-cached" && !i;
+  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), c = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), m = e.request.cache === "only-if-cached" && !i;
   a && !c && !m && e.respondWith(
-    (async () => i && await caches.match(e.request) || u(e.request))()
+    (async () => i && await caches.match(e.request) || b(e.request))()
   );
 });
