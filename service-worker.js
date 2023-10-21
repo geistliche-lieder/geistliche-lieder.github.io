@@ -1,28 +1,28 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h = [
-  s + "/_app/immutable/entry/app.680a48a3.js",
-  s + "/_app/immutable/nodes/0.4aacdc64.js",
-  s + "/_app/immutable/nodes/1.85c48942.js",
+  s + "/_app/immutable/entry/app.d1bf8a0a.js",
+  s + "/_app/immutable/nodes/0.7899543b.js",
+  s + "/_app/immutable/nodes/1.e003f7ea.js",
   s + "/_app/immutable/assets/2.625db5c3.css",
-  s + "/_app/immutable/nodes/2.35d1ffdb.js",
-  s + "/_app/immutable/nodes/3.18aff5d0.js",
-  s + "/_app/immutable/nodes/4.2890e3db.js",
-  s + "/_app/immutable/nodes/5.6e06439c.js",
+  s + "/_app/immutable/nodes/2.a8e465f4.js",
+  s + "/_app/immutable/nodes/3.da19fcf8.js",
+  s + "/_app/immutable/nodes/4.614fc729.js",
+  s + "/_app/immutable/nodes/5.22769379.js",
   s + "/_app/immutable/assets/SettingsPage.f4b2c993.css",
-  s + "/_app/immutable/chunks/SettingsPage.a6ed20ad.js",
-  s + "/_app/immutable/chunks/app.36771be4.js",
-  s + "/_app/immutable/assets/app.56fb9eeb.css",
+  s + "/_app/immutable/chunks/SettingsPage.67cdc1db.js",
+  s + "/_app/immutable/chunks/app.38b27006.js",
+  s + "/_app/immutable/assets/app.e17700e0.css",
   s + "/_app/immutable/chunks/common.1905f694.js",
   s + "/_app/immutable/chunks/index.6caee621.js",
   s + "/_app/immutable/chunks/index.c2058180.js",
   s + "/_app/immutable/chunks/music.1bce1811.js",
-  s + "/_app/immutable/chunks/navigation.54c786b7.js",
+  s + "/_app/immutable/chunks/navigation.013741af.js",
   s + "/_app/immutable/chunks/scheduler.a6ab6dcc.js",
-  s + "/_app/immutable/chunks/singletons.02d17472.js",
+  s + "/_app/immutable/chunks/singletons.bb0df4a2.js",
   s + "/_app/immutable/chunks/song.bdf5117e.js",
   s + "/_app/immutable/chunks/store.c404d4b6.js",
-  s + "/_app/immutable/chunks/stores.a55e47c0.js",
-  s + "/_app/immutable/entry/start.a1d9d52b.js"
-], u = [
+  s + "/_app/immutable/chunks/stores.bb2ca38c.js",
+  s + "/_app/immutable/entry/start.03f4665c.js"
+], r = [
   s + "/.nojekyll",
   s + "/android-chrome-192x192.png",
   s + "/android-chrome-512x512.png",
@@ -33,6 +33,8 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h
   s + "/favicon-32x32.png",
   s + "/favicon.ico",
   s + "/favicon.png",
+  s + "/home_screen_android.jpg",
+  s + "/home_screen_apple.jpg",
   s + "/index.css",
   s + "/mstile-144x144.png",
   s + "/mstile-150x150.png",
@@ -43,7 +45,7 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h
   s + "/safari-pinned-tab.svg",
   s + "/site.webmanifest",
   s + "/songs.json"
-], o = "1697896919356", c = self, p = `cache${o}`, m = h.concat(u), r = new Set(m);
+], o = "1697904283666", c = self, p = `cache${o}`, m = h.concat(r), u = new Set(m);
 c.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((a) => a.addAll(m)).then(() => {
@@ -75,7 +77,7 @@ async function d(e) {
 c.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const a = new URL(e.request.url), t = a.protocol.startsWith("http"), n = a.hostname === self.location.hostname && a.port !== self.location.port, i = a.host === self.location.host && r.has(a.pathname), l = e.request.cache === "only-if-cached" && !i;
+  const a = new URL(e.request.url), t = a.protocol.startsWith("http"), n = a.hostname === self.location.hostname && a.port !== self.location.port, i = a.host === self.location.host && u.has(a.pathname), l = e.request.cache === "only-if-cached" && !i;
   t && !n && !l && e.respondWith(
     (async () => i && await caches.match(e.request) || d(e.request))()
   );
