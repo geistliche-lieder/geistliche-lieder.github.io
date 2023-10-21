@@ -1,27 +1,27 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h = [
-  s + "/_app/immutable/entry/app.6443a991.js",
-  s + "/_app/immutable/nodes/0.ec7a197f.js",
-  s + "/_app/immutable/nodes/1.680ba915.js",
+  s + "/_app/immutable/entry/app.f34fbebb.js",
+  s + "/_app/immutable/nodes/0.3f3aa054.js",
+  s + "/_app/immutable/nodes/1.c50d6aff.js",
   s + "/_app/immutable/assets/2.625db5c3.css",
-  s + "/_app/immutable/nodes/2.32f2d289.js",
-  s + "/_app/immutable/nodes/3.9a1284d9.js",
-  s + "/_app/immutable/nodes/4.2084ca81.js",
-  s + "/_app/immutable/nodes/5.bec15d9f.js",
+  s + "/_app/immutable/nodes/2.35d1ffdb.js",
+  s + "/_app/immutable/nodes/3.18aff5d0.js",
+  s + "/_app/immutable/nodes/4.5568d97c.js",
+  s + "/_app/immutable/nodes/5.c8984b44.js",
   s + "/_app/immutable/assets/SettingsPage.f4b2c993.css",
-  s + "/_app/immutable/chunks/SettingsPage.421513c5.js",
-  s + "/_app/immutable/chunks/app.c71ceb35.js",
-  s + "/_app/immutable/assets/app.105a26b3.css",
+  s + "/_app/immutable/chunks/SettingsPage.a6ed20ad.js",
+  s + "/_app/immutable/chunks/app.36771be4.js",
+  s + "/_app/immutable/assets/app.56fb9eeb.css",
   s + "/_app/immutable/chunks/common.1905f694.js",
-  s + "/_app/immutable/chunks/index.a4cc0304.js",
+  s + "/_app/immutable/chunks/index.6caee621.js",
   s + "/_app/immutable/chunks/index.c2058180.js",
-  s + "/_app/immutable/chunks/music.917d0128.js",
-  s + "/_app/immutable/chunks/navigation.bb287f06.js",
+  s + "/_app/immutable/chunks/music.1bce1811.js",
+  s + "/_app/immutable/chunks/navigation.bf44dd2d.js",
   s + "/_app/immutable/chunks/scheduler.a6ab6dcc.js",
-  s + "/_app/immutable/chunks/singletons.469bfe38.js",
+  s + "/_app/immutable/chunks/singletons.8e4cb4b8.js",
   s + "/_app/immutable/chunks/song.bdf5117e.js",
   s + "/_app/immutable/chunks/store.c404d4b6.js",
-  s + "/_app/immutable/chunks/stores.00219964.js",
-  s + "/_app/immutable/entry/start.e04707ea.js"
+  s + "/_app/immutable/chunks/stores.8da1a1bf.js",
+  s + "/_app/immutable/entry/start.eb19ccdb.js"
 ], u = [
   s + "/.nojekyll",
   s + "/android-chrome-192x192.png",
@@ -43,7 +43,7 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h
   s + "/safari-pinned-tab.svg",
   s + "/site.webmanifest",
   s + "/songs.json"
-], o = "1697881034928", c = self, p = `cache${o}`, m = h.concat(u), r = new Set(m);
+], o = "1697885841870", c = self, p = `cache${o}`, m = h.concat(u), r = new Set(m);
 c.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((a) => a.addAll(m)).then(() => {
