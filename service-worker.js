@@ -1,27 +1,27 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h = [
-  s + "/_app/immutable/entry/app.c3412a25.js",
-  s + "/_app/immutable/nodes/0.98e49417.js",
-  s + "/_app/immutable/nodes/1.2b61fd93.js",
+  s + "/_app/immutable/entry/app.f7fe3c90.js",
+  s + "/_app/immutable/nodes/0.81f176cb.js",
+  s + "/_app/immutable/nodes/1.350c0e39.js",
   s + "/_app/immutable/assets/2.625db5c3.css",
-  s + "/_app/immutable/nodes/2.a8e465f4.js",
-  s + "/_app/immutable/nodes/3.da19fcf8.js",
-  s + "/_app/immutable/nodes/4.647fb8d6.js",
-  s + "/_app/immutable/nodes/5.06128508.js",
+  s + "/_app/immutable/nodes/2.f725c934.js",
+  s + "/_app/immutable/nodes/3.57f1efb8.js",
+  s + "/_app/immutable/nodes/4.413987f3.js",
+  s + "/_app/immutable/nodes/5.995ecb95.js",
   s + "/_app/immutable/assets/SettingsPage.f4b2c993.css",
-  s + "/_app/immutable/chunks/SettingsPage.67cdc1db.js",
-  s + "/_app/immutable/chunks/app.38b27006.js",
-  s + "/_app/immutable/assets/app.e17700e0.css",
+  s + "/_app/immutable/chunks/SettingsPage.879ffdf4.js",
+  s + "/_app/immutable/chunks/app.3c2253e4.js",
+  s + "/_app/immutable/assets/app.dffdbd13.css",
   s + "/_app/immutable/chunks/common.1905f694.js",
-  s + "/_app/immutable/chunks/index.6caee621.js",
+  s + "/_app/immutable/chunks/index.8cdb236a.js",
   s + "/_app/immutable/chunks/index.c2058180.js",
-  s + "/_app/immutable/chunks/music.1bce1811.js",
-  s + "/_app/immutable/chunks/navigation.8a33a04f.js",
+  s + "/_app/immutable/chunks/music.8baec20c.js",
+  s + "/_app/immutable/chunks/navigation.7e67f68c.js",
   s + "/_app/immutable/chunks/scheduler.a6ab6dcc.js",
-  s + "/_app/immutable/chunks/singletons.7786e0c8.js",
+  s + "/_app/immutable/chunks/singletons.db9e671b.js",
   s + "/_app/immutable/chunks/song.bdf5117e.js",
   s + "/_app/immutable/chunks/store.c404d4b6.js",
-  s + "/_app/immutable/chunks/stores.6392936c.js",
-  s + "/_app/immutable/entry/start.3b9f0474.js"
+  s + "/_app/immutable/chunks/stores.f29e34a1.js",
+  s + "/_app/immutable/entry/start.799823be.js"
 ], r = [
   s + "/.nojekyll",
   s + "/android-chrome-192x192.png",
@@ -45,40 +45,40 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h
   s + "/safari-pinned-tab.svg",
   s + "/site.webmanifest",
   s + "/songs.json"
-], o = "1698682240315", n = self, p = `cache${o}`, m = h.concat(r), u = new Set(m);
-n.addEventListener("install", (e) => {
+], o = "1701522325913", c = self, p = `cache${o}`, m = h.concat(r), u = new Set(m);
+c.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(p).then((a) => a.addAll(m)).then(() => {
-      n.skipWaiting();
+    caches.open(p).then((t) => t.addAll(m)).then(() => {
+      c.skipWaiting();
     })
   );
 });
-n.addEventListener("activate", (e) => {
+c.addEventListener("activate", (e) => {
   e.waitUntil(
-    caches.keys().then(async (a) => {
-      for (const t of a)
-        t !== p && await caches.delete(t);
-      n.clients.claim();
+    caches.keys().then(async (t) => {
+      for (const a of t)
+        a !== p && await caches.delete(a);
+      c.clients.claim();
     })
   );
 });
 async function d(e) {
-  const a = await caches.open(`offline${o}`);
+  const t = await caches.open(`offline${o}`);
   try {
-    const t = await fetch(e);
-    return a.put(e, t.clone()), t;
-  } catch (t) {
-    const c = await a.match(e);
-    if (c)
-      return c;
-    throw t;
+    const a = await fetch(e);
+    return t.put(e, a.clone()), a;
+  } catch (a) {
+    const n = await t.match(e);
+    if (n)
+      return n;
+    throw a;
   }
 }
-n.addEventListener("fetch", (e) => {
+c.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const a = new URL(e.request.url), t = a.protocol.startsWith("http"), c = a.hostname === self.location.hostname && a.port !== self.location.port, i = a.host === self.location.host && u.has(a.pathname), l = e.request.cache === "only-if-cached" && !i;
-  t && !c && !l && e.respondWith(
+  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), n = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), l = e.request.cache === "only-if-cached" && !i;
+  a && !n && !l && e.respondWith(
     (async () => i && await caches.match(e.request) || d(e.request))()
   );
 });
