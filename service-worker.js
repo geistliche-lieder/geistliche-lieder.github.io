@@ -1,84 +1,84 @@
-const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h = [
-  s + "/_app/immutable/entry/app.b112932b.js",
-  s + "/_app/immutable/nodes/0.58019bd7.js",
-  s + "/_app/immutable/nodes/1.3685e908.js",
-  s + "/_app/immutable/assets/2.625db5c3.css",
-  s + "/_app/immutable/nodes/2.e4c25823.js",
-  s + "/_app/immutable/nodes/3.956a8df3.js",
-  s + "/_app/immutable/nodes/4.c869757b.js",
-  s + "/_app/immutable/nodes/5.3ff93f22.js",
-  s + "/_app/immutable/assets/SettingsPage.f4b2c993.css",
-  s + "/_app/immutable/chunks/SettingsPage.6ba5da69.js",
-  s + "/_app/immutable/chunks/app.9d5add44.js",
-  s + "/_app/immutable/assets/app.12c6d38c.css",
-  s + "/_app/immutable/chunks/common.98f050d8.js",
-  s + "/_app/immutable/chunks/index.2f5ba9d6.js",
-  s + "/_app/immutable/chunks/index.52f962b4.js",
-  s + "/_app/immutable/chunks/music.86076db2.js",
-  s + "/_app/immutable/chunks/navigation.2e989a2e.js",
-  s + "/_app/immutable/chunks/scheduler.143b6de7.js",
-  s + "/_app/immutable/chunks/singletons.25003586.js",
-  s + "/_app/immutable/chunks/song.2e7dd3f9.js",
-  s + "/_app/immutable/chunks/store.8dced48f.js",
-  s + "/_app/immutable/chunks/stores.b62810a8.js",
-  s + "/_app/immutable/entry/start.0eea2ae1.js"
-], r = [
-  s + "/.nojekyll",
-  s + "/android-chrome-192x192.png",
-  s + "/android-chrome-512x512.png",
-  s + "/apple-touch-icon-precomposed.png",
-  s + "/apple-touch-icon.png",
-  s + "/browserconfig.xml",
-  s + "/favicon-16x16.png",
-  s + "/favicon-32x32.png",
-  s + "/favicon.ico",
-  s + "/favicon.png",
-  s + "/home_screen_android.jpg",
-  s + "/home_screen_apple.jpg",
-  s + "/index.css",
-  s + "/mstile-144x144.png",
-  s + "/mstile-150x150.png",
-  s + "/mstile-310x150.png",
-  s + "/mstile-310x310.png",
-  s + "/mstile-70x70.png",
-  s + "/robots.txt",
-  s + "/safari-pinned-tab.svg",
-  s + "/site.webmanifest",
-  s + "/songs.json"
-], o = "1722103807207", n = self, p = `cache${o}`, m = h.concat(r), u = new Set(m);
-n.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches.open(p).then((a) => a.addAll(m)).then(() => {
+const e = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h = [
+  e + "/_app/immutable/entry/app.9d1d88e6.js",
+  e + "/_app/immutable/nodes/0.4d2c8962.js",
+  e + "/_app/immutable/nodes/1.0e756fc7.js",
+  e + "/_app/immutable/assets/2.625db5c3.css",
+  e + "/_app/immutable/nodes/2.a8a9fe2e.js",
+  e + "/_app/immutable/nodes/3.96cd61bc.js",
+  e + "/_app/immutable/nodes/4.16c9b9c2.js",
+  e + "/_app/immutable/nodes/5.56c5f94e.js",
+  e + "/_app/immutable/assets/SettingsPage.f4b2c993.css",
+  e + "/_app/immutable/chunks/SettingsPage.6ba5da69.js",
+  e + "/_app/immutable/chunks/app.74d43282.js",
+  e + "/_app/immutable/assets/app.2ee7debd.css",
+  e + "/_app/immutable/chunks/common.98f050d8.js",
+  e + "/_app/immutable/chunks/index.2f5ba9d6.js",
+  e + "/_app/immutable/chunks/index.52f962b4.js",
+  e + "/_app/immutable/chunks/music.86076db2.js",
+  e + "/_app/immutable/chunks/navigation.5756cf95.js",
+  e + "/_app/immutable/chunks/scheduler.143b6de7.js",
+  e + "/_app/immutable/chunks/singletons.146a6407.js",
+  e + "/_app/immutable/chunks/song.2e7dd3f9.js",
+  e + "/_app/immutable/chunks/store.8dced48f.js",
+  e + "/_app/immutable/chunks/stores.348111cd.js",
+  e + "/_app/immutable/entry/start.d13e0ef2.js"
+], d = [
+  e + "/.nojekyll",
+  e + "/android-chrome-192x192.png",
+  e + "/android-chrome-512x512.png",
+  e + "/apple-touch-icon-precomposed.png",
+  e + "/apple-touch-icon.png",
+  e + "/browserconfig.xml",
+  e + "/favicon-16x16.png",
+  e + "/favicon-32x32.png",
+  e + "/favicon.ico",
+  e + "/favicon.png",
+  e + "/home_screen_android.jpg",
+  e + "/home_screen_apple.jpg",
+  e + "/index.css",
+  e + "/mstile-144x144.png",
+  e + "/mstile-150x150.png",
+  e + "/mstile-310x150.png",
+  e + "/mstile-310x310.png",
+  e + "/mstile-70x70.png",
+  e + "/robots.txt",
+  e + "/safari-pinned-tab.svg",
+  e + "/site.webmanifest",
+  e + "/songs.json"
+], o = "1723584062498", n = self, p = `cache${o}`, m = h.concat(d), r = new Set(m);
+n.addEventListener("install", (s) => {
+  s.waitUntil(
+    caches.open(p).then((t) => t.addAll(m)).then(() => {
       n.skipWaiting();
     })
   );
 });
-n.addEventListener("activate", (e) => {
-  e.waitUntil(
-    caches.keys().then(async (a) => {
-      for (const t of a)
-        t !== p && await caches.delete(t);
+n.addEventListener("activate", (s) => {
+  s.waitUntil(
+    caches.keys().then(async (t) => {
+      for (const a of t)
+        a !== p && await caches.delete(a);
       n.clients.claim();
     })
   );
 });
-async function d(e) {
-  const a = await caches.open(`offline${o}`);
+async function u(s) {
+  const t = await caches.open(`offline${o}`);
   try {
-    const t = await fetch(e);
-    return a.put(e, t.clone()), t;
-  } catch (t) {
-    const c = await a.match(e);
+    const a = await fetch(s);
+    return t.put(s, a.clone()), a;
+  } catch (a) {
+    const c = await t.match(s);
     if (c)
       return c;
-    throw t;
+    throw a;
   }
 }
-n.addEventListener("fetch", (e) => {
-  if (e.request.method !== "GET" || e.request.headers.has("range"))
+n.addEventListener("fetch", (s) => {
+  if (s.request.method !== "GET" || s.request.headers.has("range"))
     return;
-  const a = new URL(e.request.url), t = a.protocol.startsWith("http"), c = a.hostname === self.location.hostname && a.port !== self.location.port, i = a.host === self.location.host && u.has(a.pathname), l = e.request.cache === "only-if-cached" && !i;
-  t && !c && !l && e.respondWith(
-    (async () => i && await caches.match(e.request) || d(e.request))()
+  const t = new URL(s.request.url), a = t.protocol.startsWith("http"), c = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && r.has(t.pathname), l = s.request.cache === "only-if-cached" && !i;
+  a && !c && !l && s.respondWith(
+    (async () => i && await caches.match(s.request) || u(s.request))()
   );
 });
