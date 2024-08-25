@@ -1,0 +1,1 @@
+import{w as s}from"./index.676e4be4.js";const n="Alle Lieder",o="Favoriten",l=s([{T:n,S:[]},{T:o,S:[]}]),t=s({}),e=s(null),c=s(""),r=s({german:[],russian:[],instrumental:[],geistlicheLieder:null,russianBook:null}),i=s({src:null,album:null,song:null,isLoading:!1}),u=s(null),S=s();export{n as A,o as F,r as a,l as b,i as c,c as d,e,u as f,S as o,t as s};
