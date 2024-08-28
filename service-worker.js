@@ -1,12 +1,12 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h = [
-  s + "/_app/immutable/entry/app.eff50f49.js",
-  s + "/_app/immutable/nodes/0.4289ac0b.js",
-  s + "/_app/immutable/nodes/1.374576f4.js",
+  s + "/_app/immutable/entry/app.13327622.js",
+  s + "/_app/immutable/nodes/0.39c4b592.js",
+  s + "/_app/immutable/nodes/1.bb0c1bb3.js",
   s + "/_app/immutable/assets/2.625db5c3.css",
   s + "/_app/immutable/nodes/2.482afa4e.js",
   s + "/_app/immutable/nodes/3.ba658f6a.js",
-  s + "/_app/immutable/nodes/4.a14204b4.js",
-  s + "/_app/immutable/nodes/5.5b692673.js",
+  s + "/_app/immutable/nodes/4.ab3e9be3.js",
+  s + "/_app/immutable/nodes/5.ab1d14b4.js",
   s + "/_app/immutable/assets/SettingsPage.f4b2c993.css",
   s + "/_app/immutable/chunks/SettingsPage.745859da.js",
   s + "/_app/immutable/chunks/app.bc5fcf8b.js",
@@ -15,13 +15,13 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h
   s + "/_app/immutable/chunks/index.083c7fd3.js",
   s + "/_app/immutable/chunks/index.676e4be4.js",
   s + "/_app/immutable/chunks/music.09543946.js",
-  s + "/_app/immutable/chunks/navigation.6b380743.js",
+  s + "/_app/immutable/chunks/navigation.e98c4606.js",
   s + "/_app/immutable/chunks/scheduler.51d6c524.js",
-  s + "/_app/immutable/chunks/singletons.b68030b6.js",
+  s + "/_app/immutable/chunks/singletons.679e9b2d.js",
   s + "/_app/immutable/chunks/song.fb6bdabd.js",
   s + "/_app/immutable/chunks/store.616de63b.js",
-  s + "/_app/immutable/chunks/stores.73735560.js",
-  s + "/_app/immutable/entry/start.cf32fc54.js"
+  s + "/_app/immutable/chunks/stores.4aafbb3b.js",
+  s + "/_app/immutable/entry/start.c8fc1547.js"
 ], r = [
   s + "/.nojekyll",
   s + "/android-chrome-192x192.png",
@@ -45,7 +45,7 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), h
   s + "/safari-pinned-tab.svg",
   s + "/site.webmanifest",
   s + "/songs.json"
-], o = "1724613722949", n = self, p = `cache${o}`, m = h.concat(r), u = new Set(m);
+], o = "1724862004217", n = self, p = `cache${o}`, m = h.concat(r), u = new Set(m);
 n.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((a) => a.addAll(m)).then(() => {
