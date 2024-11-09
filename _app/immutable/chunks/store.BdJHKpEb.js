@@ -1,0 +1,1 @@
+import{w as s}from"./index.CHZgtsRV.js";const n="Alle Lieder",o="Favoriten",l=s([{T:n,S:[]},{T:o,S:[]}]),t=s({}),e=s(null),c=s(""),r=s({german:[],russian:[],instrumental:[],geistlicheLieder:null,russianBook:null}),i=s({src:null,album:null,song:null,isLoading:!1}),u=s(null),S=s();export{n as A,o as F,e as a,l as b,r as c,i as d,c as e,u as f,S as o,t as s};
