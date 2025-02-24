@@ -1,1 +1,0 @@
-import{l as t,k as c,u as e}from"./runtime.CZXkAWHM.js";function u(n){throw new Error("lifecycle_outside_component")}function i(n){t===null&&u(),t.l!==null?l(t).m.push(n):c(()=>{const o=e(n);if(typeof o=="function")return o})}function a(n){t===null&&u(),i(()=>()=>e(n))}function l(n){var o=n.l;return o.u??(o.u={a:[],b:[],m:[]})}export{a,i as o};
